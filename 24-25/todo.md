@@ -1,0 +1,4 @@
+- [Saleem & Alessandro] write modulewijzer
+  - [Saleem & Alessandro] define exam structure (ASP.Net + TS, React)
+- [Giuseppe] add topics to the weekplan
+- [Giuseppe] extend previous exam template to about 200%
