@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using StarterKit.Models;
+using StarterKit.Services;
 
 namespace StarterKit
 {
@@ -19,6 +20,8 @@ namespace StarterKit
                 options.Cookie.HttpOnly = true; 
                 options.Cookie.IsEssential = true; 
             });
+
+            builder.Services.AddScoped<ILoginService, LoginService>();
 
             builder.Services.AddDbContext<DatabaseContext>(
                 options => options.UseSqlite(builder.Configuration.GetConnectionString("SqlLiteDb")));

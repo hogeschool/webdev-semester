@@ -1,26 +1,18 @@
-using System.Diagnostics;
 using System.Text;
 using Microsoft.AspNetCore.Mvc;
-using StarterKit.Models;
-using StarterKit.Utils;
+using StarterKit.Services;
 
 namespace StarterKit.Controllers;
-
 
 [Route("api/v1/Login")]
 public class LoginController : Controller
 {
-    private readonly ILogger<LoginController> _logger;
-
-    private readonly DatabaseContext _context;
-
-
+    private readonly ILoginService _loginService;
     private readonly string ADMIN_SESSION_KEY = "adminLoggedIn";
 
-    public LoginController(ILogger<LoginController> logger, DatabaseContext context)
+    public LoginController(ILoginService loginService)
     {
-        _logger = logger;
-        _context = context;
+        _loginService = loginService;
     }
 
     [HttpPost("Login")]
@@ -28,19 +20,14 @@ public class LoginController : Controller
     {
         if (string.IsNullOrEmpty(loginBody.Password) || string.IsNullOrEmpty(loginBody.Username)) return BadRequest("No login body");
 
-        using (var context = _context)
+        LoginStatus loginStatus = _loginService.CheckPassword(loginBody.Username, loginBody.Password);
+
+        if (loginStatus == LoginStatus.Success)
         {
-            var admin = context.Admin.Where(x => x.UserName == loginBody.Username).FirstOrDefault();
-            if (admin == null) return Unauthorized("Username does not exist");
-
-            string referenceHash = admin.Password;
-            string inputHash = EncryptionHelper.EncryptPassword(loginBody.Password);
-
-            if (referenceHash == inputHash)
-            {
-                HttpContext.Session.Set(ADMIN_SESSION_KEY, Encoding.ASCII.GetBytes(loginBody.Username));
-                return Ok("Correct password");
-            }
+            HttpContext.Session.Set(ADMIN_SESSION_KEY, Encoding.ASCII.GetBytes(loginBody.Username));
+            return Ok("Correct password");
+        } else if (loginStatus == LoginStatus.IncorrectUsername) {
+            return Unauthorized("Incorrect username");
         }
         return Unauthorized("Incorrect password");
     }
@@ -49,11 +36,12 @@ public class LoginController : Controller
     public IActionResult IsAdminLoggedIn()
     {
         var currentSession = HttpContext.Session.Get(ADMIN_SESSION_KEY);
-        if (currentSession != null) {
+        if (currentSession != null)
+        {
             return Ok(Encoding.ASCII.GetString(currentSession));
         }
         return Unauthorized("You are not logged in");
-    } 
+    }
 
     [HttpGet("Logout")]
     public IActionResult Logout()
