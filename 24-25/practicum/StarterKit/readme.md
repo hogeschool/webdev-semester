@@ -6,6 +6,7 @@ The technical setup includes:
 - Node.js
 - Typescript
 - React 
+- Bootstrap CSS
 
 The template has allready the following functionalities implemented: 
 - A HomeController that serves the routes that renders the React application
@@ -50,9 +51,8 @@ to apply the model.
 
 After every migration you will also need to run `dotnet ef database update`, this will apply the changes to the database.
 
-Inside the 
 
-## Setup stepps 
+## Run the project
 The following commands needs to be executed every time you want to run the project.
 
 ### Backend
@@ -64,3 +64,9 @@ The following commands needs to be executed every time you want to run the proje
 - Go inside the `/Frontend/` directory `cd Frontend`
 - Run `yarn install` or `npm npm install`
 - `yarn watch` or `npm run watch` will build a development Javascript bundle in watch mode
+
+
+
+# Practicum workflow
+1. Create `TheatreShowController.cs`, you can copy the content of `HomeController.cs` and use that as a baseline.
+2. Create endpoints to Create (POST), Read (GET), Update (PUT) and Delete (DELETE) a show (CRUD)

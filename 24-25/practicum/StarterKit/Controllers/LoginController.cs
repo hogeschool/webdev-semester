@@ -4,11 +4,12 @@ using StarterKit.Services;
 
 namespace StarterKit.Controllers;
 
+
 [Route("api/v1/Login")]
 public class LoginController : Controller
 {
     private readonly ILoginService _loginService;
-    private readonly string ADMIN_SESSION_KEY = "adminLoggedIn";
+    
 
     public LoginController(ILoginService loginService)
     {
@@ -24,7 +25,7 @@ public class LoginController : Controller
 
         if (loginStatus == LoginStatus.Success)
         {
-            HttpContext.Session.Set(ADMIN_SESSION_KEY, Encoding.ASCII.GetBytes(loginBody.Username));
+            HttpContext.Session.Set(ADMIN_SESSION_KEY.adminLoggedIn.ToString(), Encoding.ASCII.GetBytes(loginBody.Username));
             return Ok("Correct password");
         } else if (loginStatus == LoginStatus.IncorrectUsername) {
             return Unauthorized("Incorrect username");
@@ -35,7 +36,7 @@ public class LoginController : Controller
     [HttpGet("IsAdminLoggedIn")]
     public IActionResult IsAdminLoggedIn()
     {
-        var currentSession = HttpContext.Session.Get(ADMIN_SESSION_KEY);
+        var currentSession = HttpContext.Session.Get(ADMIN_SESSION_KEY.adminLoggedIn.ToString());
         if (currentSession != null)
         {
             return Ok(Encoding.ASCII.GetString(currentSession));
@@ -46,7 +47,7 @@ public class LoginController : Controller
     [HttpGet("Logout")]
     public IActionResult Logout()
     {
-        HttpContext.Session.Remove(ADMIN_SESSION_KEY);
+        HttpContext.Session.Remove(ADMIN_SESSION_KEY.adminLoggedIn.ToString());
         return Ok("Logged out");
     }
 

@@ -4,6 +4,9 @@ using StarterKit.Utils;
 namespace StarterKit.Services;
 
 public enum LoginStatus { IncorrectPassword, IncorrectUsername, Success }
+
+public enum ADMIN_SESSION_KEY { adminLoggedIn }
+
 public class LoginService : ILoginService
 {
 
