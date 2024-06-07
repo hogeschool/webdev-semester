@@ -6,6 +6,7 @@ using System.Text.Json.Serialization;
 using StarterKit.Models;
 using System.Globalization;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace StarterKit.Controllers;
 
@@ -38,7 +39,7 @@ public class TheatreShowController : Controller
                 }
             });
             _context.SaveChanges();
-            return Ok("Added new show");
+            return Ok("Entry created");
         }
         return BadRequest("JSON is incomplete");
     }
@@ -46,31 +47,82 @@ public class TheatreShowController : Controller
     [HttpGet("Get/{id?}")]
     public IActionResult Get(int? id)
     {
-        if (id == null)
-        {
-            var entries = (from show in _context.TheatreShow 
-            join venue in _context.Venue on show.Venue!.VenueId equals venue.VenueId
-            select new {
-                Title = show.Title, 
-                Description = show.Description, 
-                Price = show.Price,
-                Venue = venue.Name,
-                Capacity = venue.Capacity
-            }
+        var date_entries = from dates in _context.TheatreShowDate
+                           join show in _context.TheatreShow on dates.TheatreShow.TheatreShowId equals show.TheatreShowId
+                           select new
+                           {
+                               dates.TheatreShowDateId,
+                               dates.DateAndTime,
+                               show.TheatreShowId
+                           };
 
-            );
-            return Ok(entries.ToArray());
+        var entries = from show in _context.TheatreShow
+                      join venue in _context.Venue on show.Venue!.VenueId equals venue.VenueId
+                      select new
+                      {
+                          show.TheatreShowId,
+                          show.Title,
+                          show.Description,
+                          show.Price,
+                          VenueName = venue.Name,
+                          venue.Capacity,
+                          dates = date_entries.Where(d => d.TheatreShowId == show.TheatreShowId).ToArray()
+                      };
+
+        if (id != null)
+        {
+            var single_result = entries.Where(e => e.TheatreShowId == id).ToArray().FirstOrDefault();
+            if (single_result == null) return NotFound("Entry not found");
+            return Ok(single_result);
         }
-        var entry = _context.TheatreShow.FirstOrDefault(v => v.TheatreShowId == id);
-        if (entry == null) return NotFound("Entity not found");
-        return Ok(entry);
+
+        return Ok(entries.ToArray().DistinctBy(v => v.TheatreShowId));
     }
 
-    
+    [HttpPut("Update")]
+    public IActionResult Update([FromBody] TheatreShowRequestBody theatreShow)
+    {
+        _context.TheatreShow.Update(new TheatreShow
+        {
+            TheatreShowId = theatreShow.TheatreShowId,
+            Title = theatreShow.Title,
+            Description = theatreShow.Description,
+            Price = theatreShow.Price,
+            theatreShowDates = theatreShow.TheatreShowDates.Select(v => new TheatreShowDate
+            {
+                TheatreShowDateId = v.TheatreShowDateId,
+                DateAndTime = DateTime.Parse(v.DateAndTime)
+            }).ToList(),
+            Venue = new Venue
+            {
+                VenueId = theatreShow.Venue.VenueId,
+                Name = theatreShow.Venue.Name,
+                Capacity = theatreShow.Venue.Capacity
+            }
+        });
+        _context.SaveChanges();
+        return Ok(theatreShow);
+    }
+
+    [HttpDelete("Delete/{id?}")]
+    public IActionResult Delete(int id)
+    {
+        var entry = _context.TheatreShow.Where(v => v.TheatreShowId == id).FirstOrDefault();
+        if (entry == null) return NotFound();
+        _context.TheatreShow.Remove(entry);
+        _context.SaveChanges();
+        return Ok("Deleted entry " + id);
+    }
+
+
+
 
 }
 public partial class TheatreShowRequestBody
 {
+    [JsonPropertyName("TheatreShowId")]
+    public int TheatreShowId { get; set; }
+
     [JsonPropertyName("Title")]
     public string? Title { get; set; }
 
@@ -89,12 +141,17 @@ public partial class TheatreShowRequestBody
 
 public partial class TheatreShowDateRequestBody
 {
+    [JsonPropertyName("TheatreShowDateId")]
+    public int TheatreShowDateId { get; set; }
+
     [JsonPropertyName("DateAndTime")]
     public string? DateAndTime { get; set; }
 }
 
 public partial class VenueRequestBody
 {
+    [JsonPropertyName("VenueId")]
+    public int VenueId { get; set; }
     [JsonPropertyName("Name")]
     public string? Name { get; set; }
 

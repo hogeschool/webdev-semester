@@ -35,12 +35,9 @@ export default function AdminLayout() {
 
         <div className="sidebar">
             <h5>Welcome <b>{responseMsg.response}</b></h5>
-            <a href="#">Dashboard</a>
-            <a href="#">Admins</a>
-            <a href="#">Customers</a>
-            <a href="#">Reservations</a>
             <a href="#">Shows</a>
-            <a href="#">Venues</a>
+            <a href="#">Create new show</a>
+            <a href="#">Reservations</a>
         </div>
 
         <main className="content">
