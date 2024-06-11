@@ -102,7 +102,7 @@ there will be two moments of summative assessments, a **mid term assessment** co
       * Credit: 100 %  of Exam Grade
 
 3.3  **Project Assessment**
-The project assessment will comprise of assessment of the quality of the product and student's individual contribution. The product will be evaluated based on the [rubric](rubric.md) and individual contribution maybe decided based on assessor(s) judgment of the student's understanding
+The project assessment will comprise of assessment of the quality of the product and student's individual contribution. The product will be evaluated based on the [rubric](rubric.md). and individual contribution maybe decided based on assessor(s) judgment of the student's understanding, contribution
    - API part:
       * When: In Week 6/7 
       * Coverage: Implementation of backend  
@@ -121,11 +121,11 @@ The project assessment will comprise of assessment of the quality of the product
 3.4. **Project:**
    - The case: Building a minimum viable web application based on given case studies.
    - The group: The formation of the group will be fixed where a group may comprise of x number of students.  
-   - The Evaluation: The project/ product will be evaluated based on the given rubric. where as the individual contribution will also be assessed an Individual might get +/-x grade from their peers working in group. In extreme cases one my get an ND if one is not contributing constructively.
+   - The Evaluation: The project/ product will be evaluated based on the given rubric. where as the individual contribution will also be assessed an Individual might get +/- grade from their peers working in group. In extreme cases one my get an ND if one is not contributing constructively.
 
 ## 4. House Rules
 
-These standards and rules are designed to create a productive, respectful, and ethical learning environment in higher education institution. Compliance ensures that all students have the opportunity to learn and succeed. *Any sort of undesired behavior might lead to severe repercussions, including but not restricted to receiving an ND grade or exclusion from the class* 
+These standards and rules are designed to create a productive, respectful, and ethical learning environment in higher education institution. Compliance ensures that all students have the opportunity to learn and succeed. *Any sort of undesired behavior might lead to severe repercussions, including but not limited to receiving an ND grade or exclusion from the class* 
 
 5.1. **Desired behavior**
 - Mandatory Attendance: Regular attendance **80%** or more in lectures, workshops, and labs is required.
