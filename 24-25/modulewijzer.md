@@ -37,10 +37,11 @@ This course provides an in-depth exploration of web application development usin
 
 The course will be assessed through two main components: In order to get a grade the student need to have minimum passing grade i.e. >= 5.5 in each of assessment. A final grade will be average of both assessment if and only iff both actives are sufficient. 
 e.g. Student Grade  = (Grade from Exam + Grade from Project ) / 2  
-Success scenario = Exam Grade = 7, Project Grade = 8 so the course grade is (7+8)/2 = 7.5 
-Failure scenarios: ND in both Exam & Project , final grade = ND
-                   Exam Grade < 5.5 or ND , ..... final grade  = NVL (fail)
-                   Project Grade < 5.5 or ND,  .... final grade  = NVL (fail) 
+- Success scenario = Exam Grade = 7, Project Grade = 8 so the course grade is (7+8)/2 = 7.5 
+- Failure scenarios: 
+   * ND in both Exam & Project , final grade = ND
+   * Exam Grade < 5.5 or ND , ..... final grade  = NVL (fail)
+   * Project Grade < 5.5 or ND,  .... final grade  = NVL (fail) 
 
 1. **Group Project:**
    - Building a minimum viable web application based on given case studies.
@@ -58,8 +59,6 @@ there will be two moments of formal assessment, a **mid term** comprising of 30%
 
 Both components are mandatory, and students must pass both assessments to receive a final grade for the course.
 
-### Grading
-*More about grading* 
 
 
 ## List of topics
