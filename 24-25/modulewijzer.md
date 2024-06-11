@@ -11,11 +11,11 @@ Web App. Development
 **Course Owner:** *Saleem Anwar* / *⁠Alessandro Ibba*
 
 **Course Teachers:** 
-   - "Anwar, S. (Saleem)" <s.anwar@hr.nl>; 
-   - "Ibba, A. (Alessandro)" <a.ibba@hr.nl>; 
-   - "Koerts, S. (Steven)" <s.koerts@hr.nl>; 
-   - "Maggiore, G. (Giuseppe)" <g.maggiore@hr.nl>; 
-   - "Okuyucu, C. (Cigdem)" <c.okuyucu@hr.nl>
+   - "Anwar, S. (Saleem)"  
+   - "Ibba, A. (Alessandro)"
+   - "Koerts, S. (Steven)" 
+   - "Maggiore, G. (Giuseppe)" 
+   - "Okuyucu, C. (Cigdem)"
 
 **Number of study points:** 12 ects
 
