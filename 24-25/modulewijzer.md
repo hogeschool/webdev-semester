@@ -6,13 +6,18 @@ This course provides an in-depth exploration of web application development usin
 
 ## Course Learning Objectives (CLOs):
 
-1. Design and develop RESTful Web APIs using .NET Core, emphasizing the implementation of endpoints, request/response handling, and middleware to facilitate communication between the client and server.
-2. Gain proficiency in utilizing .NET Core features such as dependency injection, configuration, and routing to build scalable and maintainable Web API applications.
-3. Implement authentication and authorization mechanisms in .NET Core Web APIs, including token-based authentication (JWT) and role-based access control (RBAC), to secure API endpoints and manage user access.
+1. Design and develop RESTful Web APIs using .NET Core, emphasizing the implementation of **endpoints**, request/response handling to facilitate communication between the client and server.
 
-4. Develop front-end components and user interfaces using React.js library in TypeScript, applying component-based architecture principles, and leveraging React's lifecycle methods, state management, and props for building interactive and responsive UIs.
-5. Utilize TypeScript's static typing features to enhance code reliability, maintainability, and developer productivity in React applications, including defining interfaces, type annotations, and enforcing type checking throughout the development process.
-6. Design and implement effective communication between front-end React components and back-end .NET Core Web APIs using asynchronous HTTP requests (fetch) and RESTful API conventions, ensuring efficient data exchange, error handling, and synchronization while adhering to best practices in client-server communication.
+2. Gain proficiency in utilizing .NET Core features such as **dependency injection**, configuration, routing, and data persistence.
+
+3. Implement authentication and authorization mechanisms in .NET Core Web APIs, including **middleware, filters**, token-based authentication (JWT) and role-based access control (RBAC), to secure API endpoints and manage user access.
+
+4. Design and implement a **functional programming solution in Typescript**, applying principles of pure functions, immutability, higher-order functions, function composition, polymorphism, advanced hierarchical data structures, recursion, currying, and closures to solve a complex problem.
+
+5. Develop **front-end components** and user interfaces using React.js library in TypeScript, applying component-based architecture principles, and leveraging React's lifecycle methods, state management, and props for building interactive and responsive UIs.
+
+
+6. Design and implement effective communication between front-end React components and back-end .NET Core Web APIs using asynchronous HTTP requests (fetch) and RESTful API conventions, ensuring efficient **data exchange**, error handling, and synchronization while adhering to best practices in client-server communication.
 
 ## Course Organization:
 
@@ -30,17 +35,26 @@ This course provides an in-depth exploration of web application development usin
 
 ## Course Assessment:
 
-The course will be assessed through two main components:
+The course will be assessed through two main components: In order to get a grade the student need to have minimum passing grade i.e. >= 5.5 in each of assessment. A final grade will be average of both assessment if and only iff both actives are sufficient. 
+e.g. Student Grade  = (Grade from Exam + Grade from Project ) / 2  
+Success scenario = Exam Grade = 7, Project Grade = 8 so the course grade is (7+8)/2 = 7.5 
+Failure scenarios: ND in both Exam & Project , final grade = ND
+                   Exam Grade < 5.5 or ND , ..... final grade  = NVL (fail)
+                   Project Grade < 5.5 or ND,  .... final grade  = NVL (fail) 
 
 1. **Group Project:**
    - Building a minimum viable web application based on given case studies.
    - Evaluation criteria include functionality, usability, design, and code quality.
-   - *More about assesment*
+   - *More about assessment*
 
 
 2. **End-Term Individual Exam:**
-   - Assessing understanding of course concepts, principles, and practical application.
-   - Exam format may include multiple-choice questions, short-answer questions, and coding exercises.
+   - Assessing understanding of course concepts, principles, and practical application by applying them in the code. 
+   - Exam format include on spot coding exercises.
+
+3. **Assessment Moments**
+there will be two moments of formal assessment, a **mid term** comprising of 30% of the total grade, and 70% of **final exam**. A **repair** work will be allowed for project part, and a **retake** will be available for exam part. 
+
 
 Both components are mandatory, and students must pass both assessments to receive a final grade for the course.
 
