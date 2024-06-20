@@ -105,13 +105,15 @@ There are *two types of users*: **admins** and **employees**.
 
 ## Wire-frames
 
-1. **Admin Dashboard**
+1. [**Login**](https://htmlpreview.github.io/?https://github.com/hogeschool/webdev-semester/blob/main/24-25/Project%20Ideas/Office%20Calendar/WireFrame/index.html) Dummy username emp or admin, password pwd, 
+
+2. [**Admin Dashboard**](https://htmlpreview.github.io/?https://github.com/hogeschool/webdev-semester/blob/main/24-25/Project%20Ideas/Office%20Calendar/WireFrame/admin-dashboard.html)
 Event Management: List of events with CRUD options.
 Attendees View: List of attendees for a selected event.
 Feedback View: Feedback and ratings for past events.
 Filter Events: Filters for events based on date, type, etc.
 
-2. **Employee Dashboard**
+3. [**Employee Dashboard**](https://htmlpreview.github.io/?https://github.com/hogeschool/webdev-semester/blob/main/24-25/Project%20Ideas/Office%20Calendar/WireFrame/employee-dashboard.html)
 Event List: List of upcoming events with option to attend.
 Feedback Form: Form for submitting feedback on attended events.
 Status Management: Calendar view for setting and viewing status.

@@ -118,10 +118,11 @@ The project assessment will comprise of assessment of the quality of the product
       * Credit: will be decided by the assessor(s)
 
 
-3.4. **Project:**
+3.4. **Project:** 
    - The case: Building a minimum viable web application based on given case studies.
    - The group: The formation of the group will be fixed where a group may comprise of x number of students.  
    - The Evaluation: The project/ product will be evaluated based on the given rubric. where as the individual contribution will also be assessed an Individual might get +/- grade from their peers working in group. In extreme cases one my get an ND if one is not contributing constructively.
+   - Here you may find project cases, such as [Office Calendar and Event Application](Project%20Ideas/Office%20Calendar/Description.md) and [Theater Reservation](Project%20Ideas/Theater%20Reservation/Description.md)
 
 ## 4. House Rules
 
