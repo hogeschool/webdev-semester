@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Employee Dashboard</h2>
+        <nav>
+            <a href="employee-dashboard.html">Dashboard</a>
+            <a href="set-status.html">Set Status</a>
+            <a href="view-status.html">View Peer Status</a>
+        </nav>
+        
+        <div class="dashboard-content">
+            <h3>Attended Events</h3>
+            <ul>
+                <li>Past Event 1</li>
+                <li>Past Event 2</li>
+            </ul>
+            
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li>Future Event 1</li>
+                <li>Future Event 2</li>
+            </ul>
+            
+            <h3>Available Events</h3>
+            <input type="text" id="search" placeholder="Search events">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Event A</td>
+                        <td>2024-06-21</td>
+                        <td><button>Register</button></td>
+                    </tr>
+                    <tr>
+                        <td>Event B</td>
+                        <td>2024-06-22</td>
+                        <td><button>Register</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

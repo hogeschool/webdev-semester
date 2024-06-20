@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Status</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="status-container">
+        <h2>Set Status</h2>
+        <form>
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="on-premises">On-Premises</option>
+                <option value="working-from-home">Working from Home</option>
+                <option value="away">Away</option>
+            </select>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <button type="submit">Set Status</button>
+        </form>
+    </div>
+</body>
+</html>
