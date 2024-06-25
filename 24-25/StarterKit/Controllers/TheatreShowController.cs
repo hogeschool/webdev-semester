@@ -45,7 +45,7 @@ public class TheatreShowController : Controller
     }
 
     [HttpGet("Get/{id?}")]
-    public IActionResult Get(int? id)
+    public IActionResult Get(int? id, string? search, string? location, string? from_date, string? to_date, string? sort)
     {
         var date_entries = from dates in _context.TheatreShowDate
                            join show in _context.TheatreShow on dates.TheatreShow.TheatreShowId equals show.TheatreShowId
@@ -74,6 +74,22 @@ public class TheatreShowController : Controller
             var single_result = entries.Where(e => e.TheatreShowId == id).ToArray().FirstOrDefault();
             if (single_result == null) return NotFound("Entry not found");
             return Ok(single_result);
+        }
+
+        if (search != null) {
+            entries = entries.Where(e => e.Title.Contains(search) || e.Description.Contains(search));
+        }
+
+        if (location != null) {
+            entries = entries.Where(e => e.VenueName == location);
+        }
+
+        if (from_date != null || to_date != null) {
+
+        }
+
+        if (sort != null) {
+            
         }
 
         return Ok(entries.ToArray().DistinctBy(v => v.TheatreShowId));

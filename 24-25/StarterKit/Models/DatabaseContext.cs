@@ -18,11 +18,9 @@ namespace StarterKit.Models
         public DbSet<Venue> Venue { get; set; }
 
         // Tables for the ClubHuis event calendar case
-        // public DbSet<News> News { get; set; }
         // public DbSet<User> User { get; set; }
         // public DbSet<Attendance> Attendance { get; set; }
         // public DbSet<Event_Attendance> Event_Attendance { get; set; }
-        // public DbSet<Review> Review { get; set; }
         // public DbSet<Event> Event { get; set; }
 
 

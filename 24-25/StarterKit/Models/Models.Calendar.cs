@@ -1,15 +1,5 @@
 namespace StarterKit.Models
 {
-    public class News
-    {
-        public int NewsId { get; set; }
-        public required string Title { get; set; }
-
-        public required string Content { get; set; }
-
-        public DateTime PublishedAt { get; set; }
-    }
-
     public class User
     {
         public int UserId { get; set; }
@@ -27,8 +17,6 @@ namespace StarterKit.Models
 
         public required List<Attendance> Attendances { get; set; }
 
-        public required List<Review> Reviews { get; set; }
-
         public required List<Event_Attendance> Event_Attendances { get; set; }
     }
 
@@ -44,22 +32,9 @@ namespace StarterKit.Models
     public class Event_Attendance
     {
         public int Event_AttendanceId { get; set; }
-
-        public required User User { get; set; }
-
-        public required Event Event { get; set; }
-    }
-
-    public class Review
-    {
-        public int ReviewId { get; set; }
-
         public int Rating { get; set; }
-
         public required string Feedback { get; set; }
-
         public required User User { get; set; }
-
         public required Event Event { get; set; }
     }
 
@@ -80,8 +55,6 @@ namespace StarterKit.Models
         public required string Location { get; set; }
 
         public bool AdminApproval { get; set; }
-
-        public required List<Review> Reviews { get; set; }
 
         public required List<Event_Attendance> Event_Attendances { get; set; }
     }

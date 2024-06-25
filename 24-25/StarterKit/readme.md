@@ -37,6 +37,19 @@ This is sometimes required for older libraries or projects that where build with
 https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli
 - `dotnet add package Microsoft.EntityFrameworkCore.Sqlite`
 
+## Run the project
+The following commands needs to be executed every time you want to run the project.
+
+### Backend
+- Run `dotnet ef database update` to run the database migrations. If you run this for the first time, the tool will create a local database (.db) file for you. You only need to run this if you have database changes. 
+- Run `dotnet watch run` to start the backend in watch mode. 
+- The application will be available on [http://localhost:5097/](http://localhost:5097/)
+
+### Frontend
+- Go inside the `/Frontend/` directory `cd Frontend`
+- Run `yarn install` or `npm npm install`
+- `yarn watch` or `npm run watch` will build a development Javascript bundle in watch mode
+
 ## Adding a new database migrations
 Whenever you make a change to the `DatabaseContext` you will need to add another migrations. 
 All the database changes are being managed from the `/Migrations/` folder, the content of this folder is automatically generated 
@@ -51,22 +64,3 @@ to apply the model.
 
 After every migration you will also need to run `dotnet ef database update`, this will apply the changes to the database.
 
-
-## Run the project
-The following commands needs to be executed every time you want to run the project.
-
-### Backend
-- Run `dotnet ef database update` to run the database migrations. If you run this for the first time, the tool will create a local database (.db) file for you. You only need to run this if you have database changes. 
-- Run `dotnet watch run` to start the backend in watch mode. 
-- The application will be available on [http://localhost:5097/](http://localhost:5097/)
-
-### Frontend
-- Go inside the `/Frontend/` directory `cd Frontend`
-- Run `yarn install` or `npm npm install`
-- `yarn watch` or `npm run watch` will build a development Javascript bundle in watch mode
-
-
-
-# Practicum workflow
-1. Create `TheatreShowController.cs`, you can copy the content of `HomeController.cs` and use that as a baseline.
-2. Create endpoints to Create (POST), Read (GET), Update (PUT) and Delete (DELETE) a show (CRUD)
