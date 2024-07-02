@@ -11,13 +11,15 @@ namespace StarterKit.Models
         // You can comment out or remove the case you are not going to use.
 
         // Tables for the Theatre ticket case
-        public DbSet<Customer> Customer { get; set; }
-        public DbSet<Reservation> Reservation { get; set; }
-        public DbSet<TheatreShowDate> TheatreShowDate { get; set; }
-        public DbSet<TheatreShow> TheatreShow { get; set; }
-        public DbSet<Venue> Venue { get; set; }
 
-        // Tables for the ClubHuis event calendar case
+        // public DbSet<Customer> Customer { get; set; }
+        // public DbSet<Reservation> Reservation { get; set; }
+        // public DbSet<TheatreShowDate> TheatreShowDate { get; set; }
+        // public DbSet<TheatreShow> TheatreShow { get; set; }
+        // public DbSet<Venue> Venue { get; set; }
+
+        // Tables for the event calendar case
+
         // public DbSet<User> User { get; set; }
         // public DbSet<Attendance> Attendance { get; set; }
         // public DbSet<Event_Attendance> Event_Attendance { get; set; }

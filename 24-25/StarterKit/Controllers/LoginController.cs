@@ -19,35 +19,20 @@ public class LoginController : Controller
     [HttpPost("Login")]
     public IActionResult Login([FromBody] LoginBody loginBody)
     {
-        if (string.IsNullOrEmpty(loginBody.Password) || string.IsNullOrEmpty(loginBody.Username)) return BadRequest("No login body");
-
-        LoginStatus loginStatus = _loginService.CheckPassword(loginBody.Username, loginBody.Password);
-
-        if (loginStatus == LoginStatus.Success)
-        {
-            HttpContext.Session.Set(ADMIN_SESSION_KEY.adminLoggedIn.ToString(), Encoding.ASCII.GetBytes(loginBody.Username));
-            return Ok("Correct password");
-        } else if (loginStatus == LoginStatus.IncorrectUsername) {
-            return Unauthorized("Incorrect username");
-        }
+        // TODO: Impelement login method
         return Unauthorized("Incorrect password");
     }
 
     [HttpGet("IsAdminLoggedIn")]
     public IActionResult IsAdminLoggedIn()
     {
-        var currentSession = HttpContext.Session.Get(ADMIN_SESSION_KEY.adminLoggedIn.ToString());
-        if (currentSession != null)
-        {
-            return Ok(Encoding.ASCII.GetString(currentSession));
-        }
+        // TODO: This method should return a status 200 OK when logged in, else 403, unauthorized
         return Unauthorized("You are not logged in");
     }
 
     [HttpGet("Logout")]
     public IActionResult Logout()
     {
-        HttpContext.Session.Remove(ADMIN_SESSION_KEY.adminLoggedIn.ToString());
         return Ok("Logged out");
     }
 

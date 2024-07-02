@@ -19,22 +19,7 @@ public class LoginService : ILoginService
 
     public LoginStatus CheckPassword(string username, string inputPassword)
     {
-        using (var context = _context)
-        {
-            var admin = context.Admin.Where(x => x.UserName == username).FirstOrDefault();
-            if (admin == null)
-            {
-                return LoginStatus.IncorrectUsername;
-            }
-
-            string referenceHash = admin.Password;
-            string inputHash = EncryptionHelper.EncryptPassword(inputPassword);
-
-            if (inputHash == referenceHash)
-            {
-                return LoginStatus.Success;
-            }
-        }
+        // TODO: Make this method check the password with what is in the database
         return LoginStatus.IncorrectPassword;
     }
 }
