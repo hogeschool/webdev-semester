@@ -194,4 +194,4 @@ These standards and rules are designed to create a productive, respectful, and e
 
   - Routing (week 1)
 
-## 6. [Contents](Contents/Contents.md)
+#### For the actual readers, see [contents](Contents/Contents.md)

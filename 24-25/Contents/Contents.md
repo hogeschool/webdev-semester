@@ -22,18 +22,18 @@
   
 
 ## Chapter 3 - React [Details](react.md) 
-  ### Setup of React project and JSX (week 1)
+  ### Setup of React project and JSX [Details](Ch3Unit0.md)
   
-  ### Properties, drill-down, and re-render model (week 1)
+  ### Properties, drill-down, and re-render model [Details](Ch3Unit1.md)
 
-  ### Bootstrap/CSS (week 1)
+  ### Bootstrap/CSS [Details](Ch3Unit2.md)
 
-  ### State and hooks (week 1)
+  ### State and hooks [Details](Ch3Unit3.md)
 
-  ### Controlled components (week 1)
+  ### Controlled components [Details](Ch3Unit4.md)
 
-  ### Promises (week 1)
+  ### Promises [Details](Ch3Unit5.md)
 
-  ### Routing (week 1)
+  ### Routing [Details](Ch3Unit6.md)
 
-  ### [Integration](react-dotnet.md)
+  ### Integration with backend [Details](Ch3Unit7.md)
