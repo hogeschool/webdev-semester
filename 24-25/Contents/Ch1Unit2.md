@@ -1,6 +1,6 @@
 ### [Back to List of Topics](Contents.md)
 
-# Unit 2 - Controllers, services, and dependency injection with Postgres
+# Unit 2 - Controllers, services, and dependency injection for storage
 > **Learning goals**
 > After reading this chapter, the student will be able to:
 > - define a controller;
