@@ -1,5 +1,3 @@
-### [Back to List of Topics](Contents.md)
-
 # Unit 1 - Introduction to functional programming
 
 Functional programming is a programming paradigm that is profoundly different from the imperative paradigm. This programming paradigm grants additional properties on the code that help the programmer to write code that is maintainable and correct. For this reason also imperative languages widely used in the industry have been including functional programming construct during the last decades: C\#, C++, Java, Javascript, Typescript all provide means of writing programs in terms  of functional programming abstractions, and some of them even integrated type systems that are as expressive as those of Haskell or CamL. It is evident that functional programming trascendended the role of a tool used only by researchers and pioneers of programming and is becoming more and more a reality in the industry.

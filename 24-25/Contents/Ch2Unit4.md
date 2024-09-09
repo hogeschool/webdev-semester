@@ -1,5 +1,3 @@
-### [Back to List of Topics](Contents.md)
-
 # Unit 4 – Advanced Functions
 In this unit, we study the various function operators available in Typescript. We will start with basic function manipulation operators, and then move on to important design patterns that make use of these operators.
 

@@ -1,5 +1,3 @@
-### [Back to List of Topics](Contents.md)
-
 # Unit 2 - Types in Functional Programming
 
 In Unit 1 we introduced an untyped and typed formulation of lambda calculus, which is the foundational model of functional programming. We then proceeded to translate the constructs of lambda calculus into the functional programming language Typescript. In this chapter we introduce a statically typed version of lambda calculus and then we show how its usage in Typescript. We then proceed to define basic data structures in Typescript.
