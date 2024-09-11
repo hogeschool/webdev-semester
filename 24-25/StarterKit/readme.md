@@ -48,7 +48,6 @@ Go into the Frontend directory:
 
 Next up chose a practical case and add a new migrations
 
-
 Go to the `DatabaseContext.cs` file.
 
 There you will find two commented segments.
@@ -56,6 +55,10 @@ There you will find two commented segments.
 You can uncomment one of the two segments, depending on the case you want to build.
 
 ### Add a new migration
+
+Install EF core (Entity Framework Core):
+
+`dotnet tool install --global dotnet-ef`
 
 `dotnet ef migrations add <Migration name>` 
 (Give a name to identify the migration)
