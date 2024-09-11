@@ -27,7 +27,7 @@ Follow these stepps for the fastest way to run the StarterKit.
 
 `dotnet watch run` 
 
-Go to localhost:5097
+Go to [localhost:5097](http://localhost:5097)
 
 ### Frontend
 Open a new terminal 
