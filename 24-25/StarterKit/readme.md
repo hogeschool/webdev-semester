@@ -16,12 +16,15 @@ The template has allready the following functionalities implemented:
 ## Quick start up
 Follow these stepps for the fastest way to run the StarterKit.
 
-Install .NET 8
-Install Node JS 16.20.2
+- Install .NET 8
+- Install Node JS 16.20.2
 
 ### Backend
+
 `dotnet restore`
+
 `dotnet ef database update`
+
 `dotnet watch run` 
 
 Go to localhost:5097
@@ -34,6 +37,7 @@ Install yarn as global
 `npm install --global yarn`
 
 Go into the Frontend directory:
+
 `cd Frontend`
 
 `yarn install` or just `yarn`
@@ -45,9 +49,10 @@ Next up chose a practical case and add a new migrations
 
 
 Go to the `DatabaseContext.cs` file.
+
 There you will find two commented segments.
-You can uncomment one of the two segments, depending on the case
-you want to build.
+
+You can uncomment one of the two segments, depending on the case you want to build.
 
 ### Add a new migration
 
