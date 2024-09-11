@@ -44,6 +44,7 @@ Go into the Frontend directory:
 
 `yarn watch`
 
+### Add a new migration
 
 Next up chose a practical case and add a new migrations
 
