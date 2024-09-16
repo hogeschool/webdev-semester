@@ -1,0 +1,10 @@
+GET https://localhost:5000/hello/Jim/20
+#####
+
+POST https://localhost:5000/person HTTP/1.1
+content-type: application/json
+
+{
+    "Name": "Giuseppe Maggiore",
+    "Age": "39"
+}
