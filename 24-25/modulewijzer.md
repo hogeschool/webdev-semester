@@ -23,7 +23,7 @@ Web App. Development
 ## Module description
 - **Module name:** Web App. Development
 - **Module code:** INFWAD01-D/INFWAD21-D
-- **Study points:** This module gives 12 ects, in correspondence with XXX hours:
+- **Study points:** This module gives 12 ECTS, in correspondence with 128 hours per ect:
     - 2 X 15 hours of Lesson.
     - 3 X 15 hours of practice.
     - 2 x 15 hours of project
@@ -34,7 +34,7 @@ Web App. Development
 - **Course structure:** Lectures, self-study, practical exercises and project.
 - **Prerequisite knowledge:** Successful completion of 1st year.
 - **Learning materials:**
-  - **Book:** Still to finalize
+  - **Book:** Unfortunately there is no specific book sufficient enough to cover all the topics.
   - **Readers & Exercises** reader and exercises provided in teams/github/lms, 
 - **Connected to competences:** See realiseren en ontwerpen
 - **Learning objectives:** At the end of the course, the student will be able to:
@@ -81,7 +81,7 @@ e.g. Student Grade  = (Grade from Exam + Grade from Project ) / 2
    * Project Grade < 5.5 or ND,  .... final grade  = NVL (fail) 
 
 3.1. **Assessment Moments**
-there will be two moments of summative assessments, a **mid term assessment** comprising of 30% of the total grade, and a **final term assessment** comprising of 70% of the total points. A **repair** work will be allowed for project part, and a **retake** will be available for exam part. 
+Apart from continuos feedback and data point collections, there will be two moments of summative assessments, a **mid term assessment** comprising of 30% of the total grade, and a **final term assessment** comprising of 70% of the total points. A **repair** work will be allowed for project part, and a **retake** will be available for exam part. 
 
 3.2 **Exam**
    - Mid Term Exam:
@@ -95,7 +95,7 @@ there will be two moments of summative assessments, a **mid term assessment** co
       * Duration: 2 hours
       * Credit: 70 %  of Exam Grade
    - Re-Take
-      * Pre-Condition: if the course grade combined mid-term and end term exam is less than 5.5/10 then the students is required to re-take the exam.
+      * Pre-Condition: if the course exam grade combined mid-term and end term exam is less than 5.5/10 then the students is required to re-take the exam.
       * When: In Week 18/19 
       * Coverage: All chapters  
       * Duration: 2.5 hours
@@ -120,7 +120,7 @@ The project assessment will comprise of assessment of the quality of the product
 
 3.4. **Project:** 
    - The case: Building a minimum viable web application based on given case studies.
-   - The group: The formation of the group will be fixed where a group may comprise of x number of students.  
+   - The group: The formation of the group will be fixed where a group may comprise of max 4 number of students. It is highly recommended to have same group in parallel course offered in the semester.  
    - The Evaluation: The project/ product will be evaluated based on the given rubric. where as the individual contribution will also be assessed an Individual might get +/- grade from their peers working in group. In extreme cases one my get an ND if one is not contributing constructively.
    - Here you may find project cases, such as [Office Calendar and Event Application](Project%20Ideas/Office%20Calendar/Description.md) and [Theater Reservation](Project%20Ideas/Theater%20Reservation/Description.md)
 
@@ -160,38 +160,4 @@ These standards and rules are designed to create a productive, respectful, and e
 
 
 ## 5. List of topics
-
-### Chapter 1 - Backend 
-  - Introduction to ASP.Net and MVC and Hello world in ASP.Net (1 week)
-
-  - Controllers, services, and dependency injection with Postgres (2 weeks)
-
-  - Middlewares, filters, and CQRS all go into separate lessons (2 weeks)
-
-### Chapter 2 - Typescript
-  - Introduction and basic (1 week)
-  
-  - Types in Functional Programming (1 week)
-
-  - Polymorphism in Functional Programming (1 week)
-  
-  – Advanced Functions (1 week)
-
-  - Advanced (hierarchical) data structures (1 week)
-
-### Chapter 3 - React (still to finalize)
-  - Setup of React project and JSX (week 1)
-
-  - Properties, drill-down, and re-render model (week 1)
-
-  - Bootstrap/CSS (week 1)
-
-  - State and hooks (week 1)
-
-  - Controlled components (week 1)
-
-  - Promises (week 1)
-
-  - Routing (week 1)
-
-#### For the actual readers, see [contents](Contents/Contents.md)
+- see [contents](Contents/Contents.md)

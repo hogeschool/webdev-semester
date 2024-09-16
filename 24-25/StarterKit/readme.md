@@ -13,6 +13,61 @@ The template has allready the following functionalities implemented:
 - A pre-installed frontend template using React and Typescript
 - A database model that will be installed in a SqlLite database
 
+## Quick start up
+Follow these stepps for the fastest way to run the StarterKit.
+
+- Install .NET 8
+- Install Node JS 16.20.2
+
+### Backend
+
+`dotnet restore`
+
+`dotnet ef database update`
+
+`dotnet watch run` 
+
+Go to [localhost:5097](http://localhost:5097)
+
+### Frontend
+Open a new terminal 
+
+Install yarn as global
+
+`npm install --global yarn`
+
+Go into the Frontend directory:
+
+`cd Frontend`
+
+`yarn install` or just `yarn`
+
+`yarn watch`
+
+### Add a new migration
+
+Next up chose a practical case and add a new migrations
+
+Go to the `DatabaseContext.cs` file.
+
+There you will find two commented segments.
+
+You can uncomment one of the two segments, depending on the case you want to build.
+
+### Add a new migration
+
+Install EF core (Entity Framework Core):
+
+`dotnet tool install --global dotnet-ef`
+
+`dotnet ef migrations add <Migration name>` 
+(Give a name to identify the migration)
+
+After every database change you will have to run the following command: 
+`dotnet ef database update`
+
+
+
 ## Instalation stepps
 These install stepps needs to be executed only once at the start, if you haven't done it 
 allready on your PC.
@@ -50,7 +105,7 @@ The following commands needs to be executed every time you want to run the proje
 
 ### Frontend
 - Go inside the `/Frontend/` directory `cd Frontend`
-- Run `yarn install` or `npm npm install`
+- Run `yarn install` or `npm install`
 - `yarn watch` or `npm run watch` will build a development Javascript bundle in watch mode
 
 ## Adding a new database migrations
