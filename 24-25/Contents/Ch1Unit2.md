@@ -12,7 +12,7 @@
 > - define a custom filter.
 
 
-> For this tutorial, please refer to the [ControllersAndServices](./ControllersAndServices) folder.
+> For this tutorial, please refer to the [ControllersAndServices](Code/Practicum2/) folder.
 
 ASP.Net offers a set of primitives that make it possible to split the different aspects of a web application in order to keep code organized. As much as the minimal API as we have seen it so far would make it possible to build any arbitrary web application, the complexity of the unorganized code would quickly become overwhelming, and while the framework does not mind, the humans working on the code definitely do.
 

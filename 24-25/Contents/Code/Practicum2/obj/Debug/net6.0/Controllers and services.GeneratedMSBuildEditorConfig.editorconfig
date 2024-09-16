@@ -1,0 +1,16 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Controllers_and_services
+build_property.RootNamespace = Controllers_and_services
+build_property.ProjectDir = c:\Users\Francesco\Desktop\digital-transformation-foundation-master-academy\academy\backend\ASP.Net\ControllersAndServices\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\Francesco\Desktop\digital-transformation-foundation-master-academy\academy\backend\ASP.Net\ControllersAndServices
+build_property._RazorSourceGeneratorDebug = 
