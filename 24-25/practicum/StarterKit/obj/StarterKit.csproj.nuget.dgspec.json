@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\AnwaS\\OneDrive - Hogeschool Rotterdam\\SaleemGit\\webdev-semester\\24-25\\practicum\\StarterKit\\StarterKit.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\AnwaS\\OneDrive - Hogeschool Rotterdam\\SaleemGit\\webdev-semester\\24-25\\practicum\\StarterKit\\StarterKit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AnwaS\\OneDrive - Hogeschool Rotterdam\\SaleemGit\\webdev-semester\\24-25\\practicum\\StarterKit\\StarterKit.csproj",
+        "projectName": "StarterKit",
+        "projectPath": "C:\\Users\\AnwaS\\OneDrive - Hogeschool Rotterdam\\SaleemGit\\webdev-semester\\24-25\\practicum\\StarterKit\\StarterKit.csproj",
+        "packagesPath": "C:\\Users\\AnwaS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AnwaS\\OneDrive - Hogeschool Rotterdam\\SaleemGit\\webdev-semester\\24-25\\practicum\\StarterKit\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\AnwaS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

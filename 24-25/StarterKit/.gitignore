@@ -1,0 +1,9 @@
+*.db
+bin
+obj
+wwwroot/js
+webdev.db-shm
+webdev.db-wal
+webdev.sqlite
+webdev.sqlite-shm
+webdev.sqlite-wal
