@@ -1,10 +1,29 @@
-GET https://localhost:5000/hello/Jim/20
-#####
-
-POST https://localhost:5000/person HTTP/1.1
+POST https://localhost:5000/api/person HTTP/1.1
 content-type: application/json
 
 {
-    "Name": "Giuseppe Maggiore",
-    "Age": "39"
+  "Name": "Pim Schaaf",
+  "Birthday": "1985-01-02"
 }
+#####
+
+
+GET https://localhost:5000/api/person?personId=b5078a76-35b9-4246-a107-08680c46128b
+#####
+
+
+GET https://localhost:5000/api/person/batch?personIds=b5078a76-35b9-4246-a107-08680c46128b&personIds=cf068e0b-5091-4aad-a703-b196bdec8135
+#####
+
+
+DELETE https://localhost:5000/api/person?personId=bc86ecd9-abe4-4948-b2a3-a9ca39407e14
+#####
+
+
+GET https://localhost:5000/api/person?personId=ohi this is not a guid
+#####
+
+
+GET https://localhost:5000/api/person/sayGutenTag
+HelloApiToken: bc86ecd9-abe4-4948-b2a3-a9ca39407e14
+#####
