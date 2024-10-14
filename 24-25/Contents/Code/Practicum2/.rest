@@ -1,0 +1,37 @@
+GET http://localhost:5000/api/person/sayHello
+HelloApiToken: e5e6c507-f46c-459f-a40c-15aac76f9638
+#####
+
+GET http://localhost:5000/api/person?personId=948029cd-2fae-4e06-a770-d636224626ee
+#####
+
+GET http://localhost:5000/api/person/batch?personIds=948029cd-2fae-4e06-a770-d636224626ee&personIds=6201236f-a77a-4c27-aae6-88395bc9766f
+#####
+
+DELETE http://localhost:5000/api/person?personId=6201236f-a77a-4c27-aae6-88395bc9766f
+#####
+
+POST http://localhost:5000/api/person HTTP/1.1
+content-type: application/json
+
+{ 
+  "Id": "948029cd-2fae-4e06-a770-d636224626ee",
+  "Name": "Giuseppe",
+  "Surname": "Maggiore",
+  "Birthday": "1985-03-02"
+}
+#####
+
+POST http://localhost:5000/api/person HTTP/1.1
+content-type: application/json
+
+{ 
+  "Id": "6201236f-a77a-4c27-aae6-88395bc9766f",
+  "Name": "Ivan",
+  "Surname": "Igorski",
+  "Birthday": "1975-09-11"
+}
+#####
+
+
+

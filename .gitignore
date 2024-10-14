@@ -1,4 +1,5 @@
 # Logs
+.DS-Store
 logs
 *.log
 npm-debug.log*
@@ -129,7 +130,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
+/Contents/Code/HelloWorld/bin/
 Project Ideas/
 StarterKit/
+
+
 .fake

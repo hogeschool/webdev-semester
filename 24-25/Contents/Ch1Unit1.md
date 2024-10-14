@@ -34,7 +34,7 @@ In this text we will mostly focus on SPA's in React, with the underlying assumpt
 > - work with url parameters;
 > - work with the body of requests.
 
-> For this tutorial, please refer to the [Hello world](./HelloWorld) folder.
+> For this tutorial, please refer to the [Hello world](Code/HelloWorld/) folder.
 
 The structure of the project, which we created as a `webapi` with the `dotnet new` command, is based on a few files. On one hand we have the C# project file, with `.csproj` extension, which defines the series of tasks performed when compiling and running our code. In our case, we can see that the top element of this xml file is:
 

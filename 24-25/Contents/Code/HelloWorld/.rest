@@ -1,0 +1,17 @@
+GET https://localhost:5000/hello
+#####
+
+GET https://localhost:5000/hello/Giuseppe
+#####
+
+GET https://localhost:5000/hello123/Giuseppe/Francesco/Ivan
+#####
+
+POST https://localhost:5000/person HTTP/1.1
+content-type: application/json
+
+{ 
+  "Name": "Giuseppe",
+  "Age": "thirty-seven"
+}
+#####
