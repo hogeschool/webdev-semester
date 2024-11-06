@@ -189,7 +189,7 @@ where it is shown explicitly that the outer parameter is different than the inne
 
 Bindings are one of the many examples of language extensions that can be implemented directly in lambda calculus as it is. They are just syntax to make the language more usable but lambda calculus in its current form has the same expressive power as any regular programming language. Since this is not a theoretical course on formal computational models, we will not show here how to map every construct that we explain to lambda calculus, but we will merely acknowledge that this is possible. For instance, it is possible to build numbers, boolean, arithmetic operations, boolean operators, and conditional expressions (if\-then\-else) only in terms of abstractions, but we will just accept that this is possible without proving it and use them in functional languages and use them right away with their usual semantics. The only thing that we will add is a type system to lambda calculus.
 
-# Typed Lambda Calculus (Optional)
+## Typed Lambda Calculus (Optional)
 
 In this section we present the typing rules for lambda\-calculus. As we have seen in the previous unit, lambda\-calculus is made of the following main components\: variables, abstractions, and function applications.
 
