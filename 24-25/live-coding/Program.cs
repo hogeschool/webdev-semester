@@ -15,6 +15,23 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Options;
 
+// Func<int, int> incr = x => x + 1;
+// Func<int, int> decr = x => x - 1;
+
+// void applyTwice(Func<int,int> f, int x) {
+//   Console.WriteLine(f(f(x)));
+// }
+
+// Console.WriteLine("==========");
+// Console.WriteLine("==========");
+// Console.WriteLine("==========");
+// applyTwice(incr, 2);
+// applyTwice(decr, 2);
+// Console.WriteLine("==========");
+// Console.WriteLine("==========");
+// Console.WriteLine("==========");
+
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<IPersonStorage, TextFilesPersonStorage>();
 builder.Services.AddControllers();
