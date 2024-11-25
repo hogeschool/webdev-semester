@@ -51,7 +51,7 @@ we cannot replace, for instance, `x` with 5, which is the value we assign to it 
 
 Being intrinsecally different from imperative programming, functional programming will require a completely different computational model which is not based on instructions and state transitions. This underlying computational model is called _Lambda Calculus_.
 
-## Untyped lambda calculus
+## Untyped lambda calculus (Optional)
 
 Lambda calculus is a computational model that is at the foundation of the semantics of all functional programming languages. Lambda calculus is radically different from the model above, but it has the same expressive power. This means that everything that we can compute in an imperative language can be computed also in a functional language. In this section we focus on its untyped version but later on we will extend it with a type system. Since the focus of this course is functional programming and not a theoretical course on lambda calculus we will skip some details. For example we will assume that the encoding of numbers and boolean values is already available in lambda calculus, and that arithmetic and boolean operations are possible, without formally showing their implementation in lambda calculus itself. We will just compute the result of arithmetic and boolean experssion as we would normally do.
 
@@ -189,7 +189,7 @@ where it is shown explicitly that the outer parameter is different than the inne
 
 Bindings are one of the many examples of language extensions that can be implemented directly in lambda calculus as it is. They are just syntax to make the language more usable but lambda calculus in its current form has the same expressive power as any regular programming language. Since this is not a theoretical course on formal computational models, we will not show here how to map every construct that we explain to lambda calculus, but we will merely acknowledge that this is possible. For instance, it is possible to build numbers, boolean, arithmetic operations, boolean operators, and conditional expressions (if\-then\-else) only in terms of abstractions, but we will just accept that this is possible without proving it and use them in functional languages and use them right away with their usual semantics. The only thing that we will add is a type system to lambda calculus.
 
-# Typed Lambda Calculus
+## Typed Lambda Calculus (Optional)
 
 In this section we present the typing rules for lambda\-calculus. As we have seen in the previous unit, lambda\-calculus is made of the following main components\: variables, abstractions, and function applications.
 

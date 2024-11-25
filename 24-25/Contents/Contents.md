@@ -21,10 +21,10 @@
 
   
 
-## Chapter 3 - React [Details](react.md) 
+## Chapter 3 - React [Details](Ch3Unit1A.md) 
   ### Setup of React project and JSX [Details](Ch3Unit0.md)
   
-  ### Properties, drill-down, and re-render model [Details](Ch3Unit1.md)
+  ### Properties, drill-down, and re-render model [Details](Ch3Unit1B.md)
 
   ### Bootstrap/CSS [Details](Ch3Unit2.md)
 
